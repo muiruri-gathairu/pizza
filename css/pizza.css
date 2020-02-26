@@ -6,10 +6,12 @@
     padding-left: 10px;
     text-align: left;
     color: rgb(232, 248, 9);
-    padding-top: 140px;
+    padding-top: 340px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    font-style: italic;
 }
 
 .btn-group-justified {
@@ -24,4 +26,8 @@
 }
  #rowA {
      text-align: center;
+ }
+
+ #jojo {
+     animation: bounce 3s infinite;
  }
