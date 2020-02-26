@@ -1,0 +1,27 @@
+#intro {
+    background-image: url("img/pizza1.jpg");
+    height: 520px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 10px;
+    text-align: left;
+    color: rgb(232, 248, 9);
+    padding-top: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-group-justified {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-primary {
+    padding: 20px;
+    margin:30px;
+    background-color: rgb(221, 221, 8);
+}
+ #rowA {
+     text-align: center;
+ }
