@@ -47,3 +47,10 @@
 #size,#crust,#toppings {
     display: none;
 }
+
+.btsize {
+    background-image: url("img/pizza6.png");
+    height:80px;
+    background-repeat: no-repeat;
+    width: 220px;
+}
