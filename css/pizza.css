@@ -6,7 +6,7 @@
     padding-left: 10px;
     text-align: left;
     color: rgb(232, 248, 9);
-    padding-top: 340px;
+    padding-top: 40px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,10 +24,26 @@
     margin:30px;
     background-color: rgb(221, 221, 8);
 }
+ #rowB,#rowC {
+     text-align: center;
+ }
+
  #rowA {
      text-align: center;
  }
 
- #jojo {
-     animation: bounce 3s infinite;
+ #rowB {
+     height: 400px;
+ }
+
+ button {
+     width:160px;
+     height: 50px;
+     background-color: white;
+ }
+  
+ button:hover {
+     background-color: black;
+     color: white;
+     transition: all 0.7s ease-in;
  }
