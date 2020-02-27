@@ -24,11 +24,7 @@
     margin:30px;
     background-color: rgb(221, 221, 8);
 }
- #rowB,#rowC {
-     text-align: center;
- }
-
- #rowA {
+ #rowB,#rowC,#rowA {
      text-align: center;
  }
 
@@ -47,3 +43,7 @@
      color: white;
      transition: all 0.7s ease-in;
  }
+
+#size,#crust,#toppings {
+    display: none;
+}
