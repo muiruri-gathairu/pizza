@@ -1,0 +1,89 @@
+body {
+    background-attachment: fixed;
+    background-image: url("img/blur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro {
+    background-image: url("img/pizza1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 520px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    color: rgb(232, 248, 9);
+    padding-top: 40px;
+    font-style: italic;
+}
+
+.btn-group-justified {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-primary {
+    padding: 20px;
+    margin:30px;
+    background-color: rgb(221, 221, 8);
+}
+ #rowB,#rowC,#rowA {
+     text-align: center;
+ }
+
+ #rowB {
+     height: 400px;
+ }
+
+ #rowC {
+     width: 100%;
+ }
+
+ #rowA {
+     color: rgb(243, 243, 84);
+ }
+
+ button {
+     width:160px;
+     height: 50px;
+     background-color: white;
+ }
+  
+ button:hover {
+     background-color: black;
+     color: white;
+     transition: all 0.7s ease-in;
+ }
+
+#size,#crust,#toppings {
+    display: none;
+}
+
+.btsize {
+    background-image: url("img/pizza6.png");
+    height:80px;
+    background-repeat: no-repeat;
+    width: 220px;
+}
+
+.eat {
+    text-align: center;
+    color: rgb(236, 236, 144);
+}
+ #order {
+     background-color: transparent;
+     color: yellow;
+     width: 300px;
+ }
+
+ #order:hover {
+     background-color: rgb(45, 103, 170);
+     color: white;
+ }
+
+ #huge {
+     font-size: 60px;
+ }
