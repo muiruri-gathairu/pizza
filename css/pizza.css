@@ -34,12 +34,12 @@ body {
      text-align: center;
  }
 
- #rowB {
-     height: 400px;
+ #rowC {
+     height:500px;
  }
 
- #rowC {
-     width: 100%;
+ #rowB {
+     height: 400px;
  }
 
  #rowA {

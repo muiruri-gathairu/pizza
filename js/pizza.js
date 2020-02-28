@@ -1,5 +1,5 @@
 function sizeShow() {
-    $("#size").slideToggle(1000)
+    $("#size").toggle(1000)
 };
 
  function crustShow() {

@@ -37,16 +37,26 @@
             </div>
        </div><br/><br/>
        <div class="row" id="rowC">
-            <div class="col-sm-3" ><button class="btsize" onclick="sizeShow()"><br/>size</button>
-                  <div id="size">Div 1</div>
+            <div class="col-sm-4" ><button class="btsize" onclick="sizeShow()"><br/>size</button>
+                  <div id="size">
+                    <form>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" checked>Option 1</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio">Option 2</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio">Option 3</label>
+                        </div>
+                      </form>
+                  </div>
             </div> 
-            <div class="col-sm-3"><button class="btsize" onclick="crustShow()"><br/>crust</button>
+            <div class="col-sm-4"><button class="btsize" onclick="crustShow()"><br/>crust</button>
                   <div id="crust">div 2</div>
             </div>
-            <div class="col-sm-3"><button class="btsize" onclick="toppingsShow()"><br/>topping</button>
+            <div class="col-sm-4"><button class="btsize" onclick="toppingsShow()"><br/>topping</button>
                   <div id="toppings">div 3</div>
-            </div>
-                </div>
             </div>
        </div>
    </div>
