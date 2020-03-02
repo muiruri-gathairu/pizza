@@ -35,7 +35,7 @@ body {
  }
 
  #rowC {
-     height:300px;
+     height:250px;
  }
 
  #rowB {
@@ -92,6 +92,13 @@ body {
      text-align: center;
  }
 
+ #table-rw,#pizza-table,#kk,#total1 {
+     color: yellow;
+ }
+
+ .delivery,.deliver {
+     text-align: center;
+ }
 
 
 
