@@ -87,3 +87,7 @@ body {
  #huge {
      font-size: 60px;
  }
+
+ .radio {
+     color: red;
+ }
