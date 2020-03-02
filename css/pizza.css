@@ -151,73 +151,11 @@ body {
   }
  
   
-  .container-fluid{
-    margin: auto;
-    width: 960px;
-    opacity: 0.7;
-  }
-  .col-md-4.col-sm-12 {
+
+  .col-md-4, .col-sm-12 {
     text-align: center;
     display: inline-block;
     font-size: 70px;
-    color: chartreuse;
-  }
-  @media only screen and (min-width: 600px) {
-    .container-fluid {
-      width: 95%;
-  
-    }
+    color: rgb(212, 211, 110);
   }
   
-  @media only screen and (min-width: 768px) {
-    .container-fluid {
-      width: 90%;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .container-fluid {
-      width: 70%;
-    }
-  }
-  .footer{
-    text-align: center;
-    font-size: 20px;
-  }
-  .add-info {
-    display: none;
-  }
-  .delivery {
-    display: none;
-  }
-  .text {
-    display: none;
-    color: rgb(233, 7, 7);
-  }
-  .text-center  {
-    display: none;
-  }
-  .location {
-    text-align: center;
-    color: darkorange;
-  }
-  .complete-order {
-   margin-top: 10px;
-   float: right;
-  }
-  .text {
-   margin-top: 20px;
-   text-align: center;
-   color: deepskyblue;
-  }
-  .response {
-   text-align: center;
-   color: indigo;
-  }
-  .add-info {
-   text-align: center;
-  }
-  #pizza-in{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   color: gold;
-  }
