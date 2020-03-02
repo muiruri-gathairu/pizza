@@ -22,73 +22,87 @@
        <div class="row" id="rowA">
             <div class="col-md-4">
                  <h4><q>enjoy with friends and family</q></h4>
-                 <img src="css/img/family.png"><br/><br/><br/>
+                 <img src="css/img/family.png"><br/>
                  <img src="css/img/hand.jpg" width=400px;>
             </div>
             <div class="col-md-4">
                  <h4><q>enjoy pizza during movietime</q></h4>
-                 <img src="css/img/movie.png"><br/><br/><br/>
+                 <img src="css/img/movie.png"><br/>
                  <img src="css/img/hand1.jpg" width=400px;>
             </div>
             <div class="col-md-4">
                  <h4><q>enjoy fast delivery</q></h4>
-                 <img src="css/img/loc2.png"><br/><br/><br/>
+                 <img src="css/img/loc2.png"><br/>
                  <img src="css/img/hand2.jpg" width=400px;>
             </div>
        </div><br/><br/>
-       <div class="row" id="rowC">
-            <div class="col-sm-4" ><button class="btsize" onclick="sizeShow()"><br/>size</button>
-                  <div id="size">
-                    <form>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio"><br/><img src="css/img/large.jpeg"><br/>large</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio"><br/><img src="css/img/medium.jpeg"><br/>medium</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio"><br/><img src="css/img/small.jpeg"><br/>small</label>
-                        </div>
-                    </form>
-                  </div>
-            </div> 
-            <div class="col-sm-4"><button class="btsize" onclick="crustShow()"><br/>crust</button>
-                  <div id="crust">
-                    <form>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio"><br/><img src="css/img/7.jpeg"><br/>crispy</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio"><br/><img src="css/img/6.jpeg"><br/>stuffed</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="optradio"><br/><img src="css/img/7.jpeg"><br/>gluten-free</label>
-                        </div>
-                    </form>
-                  </div>
-            </div>
-            <div class="col-sm-4"><button class="btsize" onclick="toppingsShow()"><br/>topping</button>
-                  <div id="toppings">
-                    <form>
-                        <div class="checkbox">
-                          <label><input type="checkbox" value=""><br/><img src="css/img/1.jpeg"><br/>pepperoni</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox" value=""><br/><img src="css/img/2.jpeg"><br/>mushroom</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox" value=""><br/><img src="css/img/3.jpeg"><br/>cheese</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value=""><br/><img src="css/img/5.jpeg"><br/>bacon</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value=""><br/><img src="css/img/6.jpeg"><br/>olive</label>
-                          </div>
-                    </form>
-                  </div>
-            </div>
-       </div>
+       <div class="row" id="rowC" >
+           <div class="col-md-4"><br/>
+               <h3 class="one">Size</h3>
+                  <select class="form-control size">
+                      <option label="large" value="950">Large   @   950</option>
+                      <option label="Medium" value="550">Medium   @   550</option>
+                      <option label="small" value="400">Small   @   400</option>
+                  </select>
+           </div>
+           <div class="col-md-4"><br/>
+               <h3 class="two">Crust</h3>
+                   <select class="form-control crust">
+                      <option label="Crispy" value="350">Crispy   @   350</option>
+                      <option label="Stuffed" value="450">Stuffed   @   450</option>
+                      <option label="Gluten-free" value="550">Gluten-free   @   550</option>
+                   </select>
+           </div>
+           <div class="col-md-4"><br/>
+              <h3 class="three">Toppings</h3>
+                    <select class="form-control toppings">
+                      <option label="Pepperoni" value="100">Pepperoni   @   100</option>
+                      <option label="Onions" value="150">Onions   @   150</option>
+                      <option label="Mushrooms" value="200">Mushrooms   @   200</option>
+                      <option label="Cheese" value="250">Cheese   @   250</option>
+                      <option label="Bacon" value="300">Bacon   @   300</option>
+                     </select>
+           </div>
+        </div>
+        <div class="order-button">
+          <button type="submit"><h4>place order</h4></button>
+        </div><br/>
+        <div>
+          <table class="table">
+            <thead>
+                <tr id="table-rw">
+                    <th scope="col">Order No.</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Toppings</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="pizza-table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td id="size"></td>
+                    <td id="toppings"></td>
+                    <td id="crust"></td>
+                    <td id="total"></td>                        
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="order-2">
+          <button type="button" id="order-button2"><h4>Order</h4></button>
+        </div><br/>
+        <div class="order-3">
+        <button id="order-more" type="button">One Isn't Enough</button>
+        </div><br/>
+        <div class="delivery">
+          <h3 id="total1">Total Amount: <span></span></h3> 
+        </div><br/>
+        <div class="deliver">
+          <h5 id="kk">Let Us Bring The Pizza To You For Just <em>200</em></h5>
+          <button type="button" id="yes">Yes  :)</button>
+          <button type="button" id="no">No  :(</button>
+        </div>
    </div>
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+</html>
