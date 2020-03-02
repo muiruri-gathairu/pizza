@@ -35,7 +35,7 @@ body {
  }
 
  #rowC {
-     height:500px;
+     height:300px;
  }
 
  #rowB {
@@ -88,6 +88,12 @@ body {
      font-size: 60px;
  }
 
- .radio, .checkbox {
-     color: red;
+ .order-button {
+     text-align: center;
  }
+
+
+
+
+
+
