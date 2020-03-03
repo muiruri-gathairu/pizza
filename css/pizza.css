@@ -92,15 +92,14 @@ body {
      text-align: center;
  }
 
- #table-rw,#pizza-table,#kk,#total1 {
+ #table-rw,#pizza,#kk,#total1 {
      color: yellow;
  }
 
- .delivery,.deliver {
+ .go {
      text-align: center;
  }
 
-
-
-
-
+ .over {
+     text-align: center;
+ }
