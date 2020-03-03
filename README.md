@@ -1,4 +1,4 @@
-# pizza
+# pi's pizza
 A colorful and dynamic web app where friends can order great tasting pizza, proudly made by the most revered chefs with ancient italian recipes
 ## Live demo
  https://muiruri-gathairu.github.io/pizza/
