@@ -1,23 +1,143 @@
-var sizeOfPizza = $(".size option:selected").val();
-var crustOfPizza = $(".crust option:selected").val();
-var toppingsOfPizza = $(".toppings option:selected").val();
-var total = parseInt(sizeOfPizza) + parseInt(crustOfPizza) + parseInt(toppingsOfPizza);
-var order = 0;
-var grandTotal = 0;
+//user interface
+var totalCosts = [];
 
-function Pizza(size, crust, toppings, total, orderNo) {
+function order(size, crust, Topping) {
     this.size = size;
     this.crust = crust;
-    this.toppings = toppings;
-    this.total = total;
-    this.orderNo = orderNo;
-  }
+    this.Topping = Topping;
+    this.price = 0;
 
-  $(document).ready(function(){
-    $("#size").html($(".size option:selected").text() + " - " + sizeOfPizza);
-    $("#crust").html($(".crust option:selected").text() + " - " + crustOfPizza);
-    $("#toppings").html($(".toppings option:selected").text() + " - " + toppingsOfPizza);
-    $("#total").html(total);
-  });
+}
+var pizzaSize = ["Small", "Medium", "Large"];
+var pizzaCrust = ["Crispy", "Stuffed", "Gluten-free"];
+var pizzaTopping = ["Mushrooms", "Onions", "Capsicum", "Sausage", "Bacon" ];
 
- 
+order.prototype.cost = function() {
+    if (this.size === pizzaSize[0]) {
+        this.price += 450;
+    } else if (this.size === pizzaSize[1]) {
+        this.price += 650;
+    } else if (this.size === pizzaSize[2]) {
+        this.price += 850;
+    }
+
+    if (this.crust === pizzaCrust[0]) {
+        this.price += 200;
+    } else if (this.crust === pizzaCrust[1]) {
+        this.price += 250;
+    } else if (this.crust === pizzaCrust[2]) {
+        this.price += 300;
+    }
+
+
+    if (this.vegTopping === pizzaTopping[0]) {
+        this.price += 200;
+    } else if (this.vegTopping === pizzaTopping[1]) {
+        this.price += 200;
+    } else if (this.vegTopping === pizzaTopping[2]) {
+        this.price += 200;
+    } else if (this.vegTopping === pizzaTopping[3]) {
+    this.price += 200;
+    } else if (this.vegTopping === pizzaTopping[4]) {
+    this.price += 200;
+    }
+
+    return this.price;
+}
+
+
+order.prototype.totalCost = function() {
+    var orderTotal = 0;
+    for (var order = 0; order < totalCosts.length; order++) {
+        orderTotal += totalCosts[order];
+    }
+    return orderTotal;
+}
+
+
+$(document).ready(function() {
+    $("input#order1").click(function(event) {
+        event.preventDefault();
+        var sizes = $("select#piz").val();
+        var crusts = $("select#crus").val();
+        var Toppings = $("select#top").val();
+
+        var newPizzaOrder = new order(sizes, crusts, Toppings);
+        newPizzaOrder.cost();
+        totalCosts.push(newPizzaOrder.price);
+
+
+        $("#sz").text(sizes);
+        $("#cr").text(crusts);
+        $("#nvgs").text(Toppings);
+        $("#tc").text(newPizzaOrder.totalCost());
+
+
+    });
+
+    $("#order2").click(function() {
+        prompt("Please enter you name:")
+        prompt("Please enter you location:")
+        prompt("Please enter your address and street name:")
+        alert("Delivery will cost you 250shs, be on the lookout for discounts")
+        alert("Your order will be delivered shortly!!!")
+
+    });
+
+
+    $(".picha").click(function() {
+
+        $(".jaza").fadeToggle("slow");
+
+    });
+
+
+    $(".eve1").hover(function() {
+        $(".para").slideToggle(1000);
+        $("#img1").slideToggle(1000);
+        $(".para").show();
+    });
+    $(".eve2").hover(function() {
+        $(".para1").slideToggle(1000);
+        $("#img2").slideToggle(1000);
+        $(".para1").show();
+    });
+    $(".eve3").hover(function() {
+        $(".para2").slideToggle(1000);
+        $("#img3").slideToggle(1000);
+        $(".para2").show();
+    });
+
+
+    $(".eve4").hover(function() {
+        $(".para3").slideToggle(1000);
+        $("#img4").slideToggle(1000);
+        $(".para3").show();
+
+    });
+})
+
+
+function validate() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var text = document.getElementById("text").value;
+
+
+
+    if (name === "") {
+        alert("Please write your name!");
+
+    } else if (email === "") {
+        alert("Please write your name!");
+
+    } else if (text === "") {
+
+        alert("Please write a message");
+
+    } else {
+
+        alert("We have received  your message " + name + ", " + " thank you for getting in touch with us");
+    };
+
+}
