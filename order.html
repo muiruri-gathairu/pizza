@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/pizza.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="go">
+<div class="order">
+    <h2>place your order</h2>
+         <form id="charge">
+             <div class="row">
+                 <div class="col-md-4">
+                 <label for="">Pizza Size</label><br/>
+                 <select name="" id="piz">
+                     <option value="Size">SELECT PIZZA</option>
+                     <option value="Small">Small @ 450</option>
+                     <option value="Medium">Medium @ 650</option>
+                     <option value="Large">Large @ 8500</option>
+                 </select>
+             </div><br/><br/>
+             <div class="col-md-4">
+                 <label for="">Toppings</label><br/>
+                 <select name="" id="top">
+                     <option value="">TOPPINGS</option>
+                     <option value="Mushrooms">Mushrooms @ 200</option>
+                     <option value="Cheese">Cheese @ 200</option>
+                     <option value="Chicken">Chicken @ 200</option>
+                     <option value="Sausage">Sausage @ 200</option>
+                     <option value="Bacon">Bacon @ 200</option>
+                 </select>
+             </div><br/><br/> 
+             <div class="col-md-4">
+                 <label for="">Crust</label><br/>
+                 <select name="Crust" id="crus">
+                     <option value="Crust">CRUST</option>
+                     <option value="Crispy">Crispy @ 200</option>
+                     <option value="Stuffed">Stuffed @ 250</option>
+                     <option value="Gluten-free">Gluten-free @ 300</option>
+                 </select>
+             <div>
+                 <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Order" id="order1">
+             </div><br><br>
+         </form>
+     <div class="over">
+         <h3>Receipt</h3>
+             <p id="sz">size:</p>
+             <p id="nvgs">Toppings:</p>
+             <p id="cr">Crust:</p>
+             <p id="tc">Total Amount:</p>
+     </div><br><br>
+     <div class="order2">
+         <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Delivery" id="order2">
+     </div>
+</div>
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="./js/pizza.js"></script>
+</body>
+
+</html>
+</body>
+</html>
